@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Bundle Name="Bootstrapper" Version="1.0.0.0" Manufacturer="RenderHeads" UpgradeCode="99f91301-023c-412c-b566-b95c97f92a8b">
+		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
+
+		<Chain>
+			<!-- TODO: Define the list of chained packages. -->
+			<!-- <MsiPackage SourceFile="path\to\your.msi" /> -->
+      
+		</Chain>
+    //TODO: https://www.codeproject.com/articles/511653/using-wix-with-managed-custom-action
+    //TODO: https://www.codeproject.com/Articles/132918/Creating-Custom-Action-for-WIX-Written-in-Managed
+    <Custom Action='CustomActionId' Before='InstallFinalize'/>
+	</Bundle>
+</Wix>
